@@ -250,5 +250,32 @@
       "COLUMN_DOMAIN_KEYWORD_TARGET_URL",
       "COLUMN_DOMAIN_KEYWORD_NUMBER"
     ]
+  },
+  "backlinks_overview": {
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "target": "domain",
+      "target_type": "string"
+    },
+    "optional_fields": {
+      "export_columns": "columns",
+      "export_escape": "boolean",
+      "display_limit": "integer"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_BACKLINKS_TOTAL",
+      "COLUMN_BACKLINKS_DOMAINS",
+      "COLUMN_BACKLINKS_IPS",
+      "COLUMN_BACKLINKS_FOLLOW",
+      "COLUMN_BACKLINKS_NOFOLLOW",
+      "COLUMN_BACKLINKS_SCORE",
+      "COLUMN_BACKLINKS_TRUST"
+    ],
+    "valid_columns": [
+    ]
   }
 }

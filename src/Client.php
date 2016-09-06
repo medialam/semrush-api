@@ -184,6 +184,16 @@ class Client
     }
 
     /**
+     * @param string $domain
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getBacklinksOverview($domain, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_BACKLINKS_OVERVIEW, ['target' => $domain] + $options);
+    }
+
+    /**
      * Make the request
      *
      * @param string $type
