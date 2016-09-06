@@ -252,6 +252,7 @@
     ]
   },
   "backlinks_overview": {
+    "endpoint": "http://api.semrush.com/analytics/v1/",
     "required_fields": {
       "type": "type",
       "key": "string",
@@ -276,6 +277,13 @@
       "COLUMN_BACKLINKS_TRUST"
     ],
     "valid_columns": [
+      "COLUMN_BACKLINKS_TOTAL",
+      "COLUMN_BACKLINKS_DOMAINS",
+      "COLUMN_BACKLINKS_IPS",
+      "COLUMN_BACKLINKS_FOLLOW",
+      "COLUMN_BACKLINKS_NOFOLLOW",
+      "COLUMN_BACKLINKS_SCORE",
+      "COLUMN_BACKLINKS_TRUST"
     ]
   }
 }

@@ -273,7 +273,12 @@ class Request
      */
     public function getEndpoint()
     {
-        return self::ENDPOINT;
+        $endpoint = $this->definition->getEndPoint();
+        if (!isset($endpoint)) {
+            $endpoint = self::ENDPOINT;
+        }
+
+        return $endpoint;
     }
 
 

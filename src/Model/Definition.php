@@ -41,6 +41,16 @@ class Definition
     }
 
     /**
+     * Get this type's endpoint
+     *
+     * @return string
+     */
+    public function getEndPoint()
+    {
+        return $this->definition['endpoint'];
+    }
+
+    /**
      * Get this type's required fields
      *
      * @return string[]

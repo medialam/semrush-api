@@ -37,6 +37,9 @@ abstract class Column
     const COLUMN_BACKLINKS_TOTAL = 'total';
     const COLUMN_BACKLINKS_FOLLOW = 'follows_num';
     const COLUMN_BACKLINKS_NOFOLLOW = 'nofollows_num';
+    const COLUMN_BACKLINKS_IPS = 'ips_num';
+    const COLUMN_BACKLINKS_SCORE = 'score';
+    const COLUMN_BACKLINKS_TRUST = 'trust_score';
 
     /**
      * Get all the possible columns
