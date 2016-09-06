@@ -121,6 +121,13 @@ class ClientTest extends PHPUnit_Framework_TestCase {
         $this->assertTrue($result instanceof Result);
     }
 
+    public function testGetBacklinksOverview()
+    {
+        $this->doSetup(1);
+        $result = $this->instance->getBacklinksOverview('domain.com', []);
+        $this->assertTrue($result instanceof Result);
+    }
+
     public function testCache()
     {
         $this->doSetup(2);
