@@ -188,6 +188,16 @@ class Client
      * @param array $options
      * @return ApiResult
      */
+    public function getPhraseThis($keyword, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_KEYWORD_OVERVIEW, ['phrase' => $keyword] + $options);
+    }
+
+    /**
+     * @param string $domain
+     * @param array $options
+     * @return ApiResult
+     */
     public function getBacklinksOverview($domain, $options = [])
     {
         return $this->makeRequest(Type::TYPE_BACKLINKS_OVERVIEW, ['target' => $domain] + $options);
