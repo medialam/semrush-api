@@ -32,7 +32,6 @@ class Request
     /**
      * @param string $type
      * @param array $options
-     * @param boolean $sendColumns
      */
     public function __construct($type, $options = [])
     {
