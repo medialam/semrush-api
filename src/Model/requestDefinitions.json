@@ -319,5 +319,29 @@
       "COLUMN_BACKLINKS_SCORE",
       "COLUMN_BACKLINKS_TRUST"
     ]
+  },
+  "phrase_organic": {
+    "endpoint": "http://api.semrush.com/",
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "string",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_escape": "boolean",
+      "display_limit": "integer"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL"
+    ],
+    "valid_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL"
+    ]
   }
 }

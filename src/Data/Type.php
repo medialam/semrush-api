@@ -15,6 +15,7 @@ abstract class Type
     const TYPE_DOMAIN_ADWORDS_UNIQUE = "domain_adwords_unique";
     const TYPE_KEYWORD_OVERVIEW = 'phrase_this';
     const TYPE_BACKLINKS_OVERVIEW = "backlinks_overview";
+    const TYPE_PHRASE_ORGANIC = "phrase_organic";
 
     /**
      * Get all the possible columns

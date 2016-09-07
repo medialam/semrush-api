@@ -204,6 +204,16 @@ class Client
     }
 
     /**
+     * @param string $keyword
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getPhraseOrganic($keyword, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_ORGANIC, ['phrase' => $keyword] + $options);
+    }
+
+    /**
      * Make the request
      *
      * @param string $type
