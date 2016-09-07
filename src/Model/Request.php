@@ -15,6 +15,11 @@ class Request
     protected $type;
 
     /**
+     * @var string
+     */
+    protected $target;
+
+    /**
      * @var array
      */
     protected $options = [];
@@ -27,6 +32,7 @@ class Request
     /**
      * @param string $type
      * @param array $options
+     * @param boolean $sendColumns
      */
     public function __construct($type, $options = [])
     {
@@ -34,7 +40,10 @@ class Request
         $this->options = ['type' => $type] + $options;
         $this->loadRequestDefinition();
         $this->mergePresets();
-        $this->options['export_columns'] = $this->getExpectedResultColumns();
+        if ( $this->definition->getExportColumnsRequired() )
+        {
+            $this->options['export_columns'] = $this->getExpectedResultColumns();
+        }
         $this->validate();
     }
 

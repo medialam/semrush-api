@@ -28,6 +28,8 @@ class ResponseParser
         }
 
         $rows = $this->splitStringIntoArray($data);
+        $rows = array_filter($rows);
+
         $columns = $request->getExpectedResultColumns();
         $rows = $this->hackToFixNewlineInCell($rows);
 

@@ -41,6 +41,16 @@ class Definition
     }
 
     /**
+     * Determine if export columns required
+     *
+     * @return boolean
+     */
+    public function getExportColumnsRequired()
+    {
+        return (isset($this->definition['optional_fields']["export_columns"]));
+    }
+
+    /**
      * Get this type's endpoint
      *
      * @return string

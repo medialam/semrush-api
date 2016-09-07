@@ -291,11 +291,10 @@
     "required_fields": {
       "type": "type",
       "key": "string",
-      "target": "domain",
+      "target": "string",
       "target_type": "string"
     },
     "optional_fields": {
-      "export_columns": "columns",
       "export_escape": "boolean",
       "display_limit": "integer"
     },
