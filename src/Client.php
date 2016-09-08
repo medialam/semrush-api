@@ -214,6 +214,29 @@ class Client
     }
 
     /**
+     * @param string $keyword
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getPhraseAdwords($keyword, $options = [])
+    {
+        return $this->makeRequest(Type::TYPE_PHRASE_ADWORDS, ['phrase' => $keyword] + $options);
+    }
+
+    /**
+     * @param string $url
+     * @param array $options
+     * @return ApiResult
+     */
+    public function getUrlAdwords($url, $options = [])
+    {
+        //@TODO doesn't seem to like https in call, remove this and make sure it has a trailing /
+        $url = str_replace('https://','http://',$url);
+        $url = rtrim($url, '/') . '/';
+        return $this->makeRequest(Type::TYPE_URL_ADWORDS, ['url' => $url] + $options);
+    }
+
+    /**
      * Make the request
      *
      * @param string $type

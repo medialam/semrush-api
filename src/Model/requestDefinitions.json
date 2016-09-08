@@ -343,5 +343,72 @@
       "COLUMN_OVERVIEW_DOMAIN",
       "COLUMN_DOMAIN_KEYWORD_TARGET_URL"
     ]
+  },
+  "phrase_adwords": {
+    "endpoint": "http://api.semrush.com/",
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "phrase": "string",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_escape": "boolean",
+      "display_limit": "integer"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL"
+    ],
+    "valid_columns": [
+      "COLUMN_OVERVIEW_DOMAIN",
+      "COLUMN_DOMAIN_KEYWORD_TARGET_URL"
+    ]
+  },
+  "url_adwords": {
+    "endpoint": "http://api.semrush.com/",
+    "required_fields": {
+      "type": "type",
+      "key": "string",
+      "url": "string",
+      "database": "database"
+    },
+    "optional_fields": {
+      "export_escape": "boolean",
+      "display_limit": "integer",
+      "export_columns": "columns"
+    },
+    "preset_fields": {
+      "export_escape": "1"
+    },
+    "default_columns": [
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_DOMAIN_KEYWORD_ORGANIC_POSITION",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY",
+      "COLUMN_DOMAIN_KEYWORD_TRAFFIC_PERCENTAGE",
+      "COLUMN_KEYWORD_ESTIMATED_PRICE",
+      "COLUMN_KEYWORD_ORGANIC_NUMBER_OF_RESULTS",
+      "COLUMN_KEYWORD_INTEREST",
+      "COLUMN_DOMAIN_KEYWORD_AD_TITLE",
+      "COLUMN_DOMAIN_KEYWORD_AD_TEXT"
+    ],
+    "valid_columns": [
+      "COLUMN_DOMAIN_KEYWORD",
+      "COLUMN_DOMAIN_KEYWORD_ORGANIC_POSITION",
+      "COLUMN_KEYWORD_AVERAGE_QUERIES",
+      "COLUMN_KEYWORD_AVERAGE_CLICK_PRICE",
+      "COLUMN_KEYWORD_COMPETITIVE_AD_DENSITY",
+      "COLUMN_DOMAIN_KEYWORD_TRAFFIC_PERCENTAGE",
+      "COLUMN_KEYWORD_ESTIMATED_PRICE",
+      "COLUMN_KEYWORD_ORGANIC_NUMBER_OF_RESULTS",
+      "COLUMN_KEYWORD_INTEREST",
+      "COLUMN_DOMAIN_KEYWORD_AD_TITLE",
+      "COLUMN_DOMAIN_KEYWORD_AD_TEXT"
+    ]
   }
 }
