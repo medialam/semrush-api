@@ -354,7 +354,8 @@
     },
     "optional_fields": {
       "export_escape": "boolean",
-      "display_limit": "integer"
+      "display_limit": "integer",
+      "export_columns": "columns"
     },
     "preset_fields": {
       "export_escape": "1"
