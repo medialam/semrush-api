@@ -76,6 +76,7 @@
     ]
   },
   "domain_rank_history": {
+    "endpoint": "http://api.semrush.com/",
     "required_fields": {
       "type": "type",
       "key": "string",
